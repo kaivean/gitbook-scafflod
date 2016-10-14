@@ -1,0 +1,25 @@
+{
+    "title": "myproject",
+    "plugins": ["theme-default", "navigator", "toolbar", "demoshow"],
+    "pluginsConfig": {
+        "sharing": {
+            "all": [],
+            "facebook": false,
+            "twitter": false,
+            "google": false,
+            "weibo": false,
+            "instapaper": false,
+            "vk": false
+        },
+        "toolbar": {
+            "buttons":
+            [
+                {
+                    "label": "GitHub",
+                    "icon": "fa fa-home",
+                    "url": "/"
+                }
+            ]
+        }
+    }
+}

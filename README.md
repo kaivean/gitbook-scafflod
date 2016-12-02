@@ -39,4 +39,4 @@ Please refer to existed content in the SUMMARY.md
 ### Attention
 modify title filed in book.json
 
-[Lean More](/myproject/basic.html)
+[Lean More](./myproject/basic.html)

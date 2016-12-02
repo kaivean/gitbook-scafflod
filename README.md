@@ -7,6 +7,8 @@ Add new features:
 * show Demo: front-end projects usually show some demos, Learn [showdemo](https://www.npmjs.com/package/gitbook-plugin-demoshow)
 * navigator: page navigator, quickly go to titles
 * toobar: customlize some link on the right corner
+* qrcode: automatically create qrcode on the left corner
+
 
 ## Let's start
 

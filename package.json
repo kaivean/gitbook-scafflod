@@ -1,0 +1,12 @@
+{
+  "name": "gitbook-scaffold",
+  "version": "1.0.0",
+  "description": "gitbook",
+  "main": "server.js",
+  "author": "kaivean",
+  "license": "ISC",
+  "devDependencies": {
+      "koa": "^1.2.4",
+      "koa-static": "^2.0.0"
+  }
+}

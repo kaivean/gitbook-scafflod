@@ -26,9 +26,12 @@ Add new features:
 
     gitbook install
 
-### Start server
+### Start debug server
+After saving a .md file, gitbook can automatically compile .md to a html file and you can preview
 
     gitbook serve
+
+Open up http://localhost:4000/ in your browser
 
 ### Add a .md file
 Learn [gitbook markdown](http://toolchain.gitbook.com/syntax/markdown.html)
@@ -38,5 +41,15 @@ Please refer to existed content in the SUMMARY.md
 
 ### Attention
 modify title filed in book.json
+modify name filed in package.json
+
+### Release
+Finally, when finish all documents, release the book to show other guys
+**Attention: ** this is different from the debug mode
+
+    sh start-online-server.sh
+
+Open up http://localhost:8050/ in your browser
+
 
 [Lean More](./myproject/basic.md)

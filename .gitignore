@@ -8,3 +8,4 @@ mock
 src/test.js
 .idea
 _book
+nohup.out

@@ -5,5 +5,7 @@ echo "Current Dir: $DIR"
 
 gitbook build
 sh stop-online-server.sh
+rm nohup.out
 nohup node $DIR/server.js &
-echo 'Listening on port 8050. Open up http://localhost:8050/ in your browser. '
+sleep 3
+cat nohup.out

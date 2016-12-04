@@ -5,6 +5,8 @@
   "main": "server.js",
   "author": "kaivean",
   "license": "ISC",
+  "_serverHost": "127.0.0.1",
+  "_serverPort": "8050",
   "devDependencies": {
       "koa": "^1.2.4",
       "koa-static": "^2.0.0"

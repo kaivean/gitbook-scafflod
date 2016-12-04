@@ -1,11 +1,18 @@
 #!/bin/sh
 
+# 该脚本执行的时候 是在 .git/hooks目录下，因此，一下目录都已该目录计算
 unset GIT_DIR
 cd `dirname $0`
 CURDIR=`pwd`
 echo "pwd: $DIR"
-cd ../
+# 到达git根目录
+cd ../../
 GITPATH=`pwd`
-echo "重启服务器"
-sh start-online-server.sh
+
+#  得到服务器地址
+host=`cat package.json|grep '_serverHost'|tr -s [:space:]|cut -f 4 -d '"'`
+port=`cat package.json|grep '_serverPort'|tr -s [:space:]|cut -f 4 -d '"'`
+
+echo "正在请求http://$host:$port/update，服务器更新中"
+curl http://$host:$port/update
 exit 0

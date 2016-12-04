@@ -9,7 +9,8 @@ var serve = require('koa-static');
 var execSync = require('child_process').execSync;
 
 const app = koa();
-const port = 8050;
+var pack = require('../package.json');
+const port = pack._serverPort || 8050;
 
 // 提供静态文件服务
 app.use(serve(path.resolve(__dirname, '../_book')));

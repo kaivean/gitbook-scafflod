@@ -41,17 +41,26 @@ Learn [gitbook markdown](http://toolchain.gitbook.com/syntax/markdown.html)
 ### Add link to the SUMMARY.md
 Please refer to existed content in the SUMMARY.md
 
-### Attention
-modify title filed in book.json
-modify name filed in package.json
+### Modify
+* modify title filed in book.json
+* modify name filed in package.json
 
-### Release
+## Release
 Finally, when finish all documents, release the book to show other guys
-**Attention: ** this is different from the debug mode
 
-    sh start-online-server.sh
+### Server
+1. First modify `_serverHost`(your server host) and `_serverPort` (specify a server port),  then push this new configure
 
-Open up http://localhost:8050/ in your browser
+2. Log in your server, then git clone the git project, then run the following command:
 
+```
+sh _server/start-online-server.sh
+```
+
+3. Open up http://localhost:8050/ in your browser
+
+### Update
+After you add or udpate .md files, just push to the remote master and will trigger server update automatically.
+**Attention** Updating other types of files, not .md files, may not trigger server update automatically
 
 [Lean More](./myproject/basic.md)

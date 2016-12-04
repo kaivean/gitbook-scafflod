@@ -17,18 +17,21 @@ app.use(serve(path.resolve(__dirname, '../_book')));
 
 app.use(function *(next){
      yield next;
-     this.body = 'update server fail';
+     this.body = 'update server fail\nthe server return the following information: \n';
      if (this.request.path === '/update') {
          var shellPath = path.resolve(__dirname, 'update.sh');
          var command = 'sh ' + shellPath;
          var result = execSync(command, {
              cwd: path.resolve(__dirname)
          });
-         if (result.indexOf('success') > -1) {
+         if (result.indexOf('gitbooksuccess') > -1) {
              this.body = 'update server success';
          }
+         else {
+             this.body += result;
+         }
      }
-     console.log(result, this.body, this.method, this.url);
+     console.log('result', result, this.body, this.method, this.url);
 });
 
 

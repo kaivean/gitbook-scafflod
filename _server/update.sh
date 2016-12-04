@@ -14,9 +14,9 @@ do
       then
           #   sh $DIR/start-online-server.sh
           echo $res
-          echo "success"
+          echo "gitbooksuccess"
       else
-        echo "fail"
-      fi
+        echo $res
+     fi
      sleep 3
 done

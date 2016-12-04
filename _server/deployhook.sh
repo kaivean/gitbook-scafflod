@@ -2,6 +2,6 @@
 
 cd `dirname $0`
 DIR=`pwd`
-chmod +x post-receive
-mkdir -p $DIR/../hooks
-cp post-receive $DIR/../hooks
+chmod +x pre-push
+mkdir -p $DIR/../.git/hooks
+cp pre-push $DIR/../.git/hooks

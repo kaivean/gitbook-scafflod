@@ -3,6 +3,7 @@ cd `dirname $0`
 DIR=`pwd`
 cd ..
 
+echo "udpate $DIR"
 # 尝试10次
 for x in 1
 do

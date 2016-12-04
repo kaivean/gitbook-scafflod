@@ -28,7 +28,7 @@ app.use(function *(next){
              this.body = 'update server success';
          }
      }
-     console.log(this.body, this.method, this.url);
+     console.log(result, this.body, this.method, this.url);
 });
 
 

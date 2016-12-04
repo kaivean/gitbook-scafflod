@@ -7,9 +7,9 @@ GITDIR=`pwd`
 echo "Current Dir: $GITDIR"
 git pull origin master
 # gitbook build
-sh stop-online-server.sh
+sh $GITDIR/_server/stop-online-server.sh
 rm nohup.out
 nohup node $GITDIR/_server/server.js &
-sh ./deployhook.sh
+sh $GITDIR/_server/deployhook.sh
 sleep 3
 cat nohup.out

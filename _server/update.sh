@@ -10,7 +10,7 @@ do
     res=`git pull origin master`
     num=`echo $res|grep -c 'Fast-forward'`
     # 不为1 即代表，代码有更新，那么就更新文档，重启服务器
-    if [ "$res" -eq "1" ]
+    if [ "$num" -eq "1" ]
       then
           #   sh $DIR/start-online-server.sh
           echo $res

@@ -53,11 +53,12 @@ Finally, when finish all documents, release the book to show other guys
 
 2. Log in your server, then git clone the git project, then run the following command:
 
+
 ```
 sh _server/start-online-server.sh
 ```
 
-3. Open up http://localhost:8050/ in your browser
+3. Open up http://<_serverHost>:<_serverPort>/ in your browser
 
 ### Update
 After you add or udpate .md files, just push to the remote master and will trigger server update automatically.

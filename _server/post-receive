@@ -1,0 +1,11 @@
+#!/bin/sh
+
+unset GIT_DIR
+cd `dirname $0`
+CURDIR=`pwd`
+echo "pwd: $DIR"
+cd ../
+GITPATH=`pwd`
+echo "重启服务器"
+sh start-online-server.sh
+exit 0

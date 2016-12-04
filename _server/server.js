@@ -11,7 +11,7 @@ const app = koa();
 const port = 8050;
 
 // 提供静态文件服务
-app.use(serve(path.resolve(__dirname, '_book')));
+app.use(serve(path.resolve(__dirname, '../_book')));
 
 // 启动后端, 不指定hostname，则通过localhost ,127.0.0.1 机器地址都可以访问
 app.listen(port, function (error) {

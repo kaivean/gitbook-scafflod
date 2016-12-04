@@ -8,7 +8,7 @@ Add new features:
 * navigator: page navigator, quickly go to titles
 * toobar: customlize some link on the right corner
 * qrcode: automatically create qrcode on the left corner
-
+* server update: when push .md to the remote master, the server build and update gitbook automatically
 
 ## Let's start
 

@@ -17,7 +17,7 @@ app.use(serve(path.resolve(__dirname, '../_book')));
 
 app.use(function *(next){
      yield next;
-     this.body = 'update server fail\nthe server return the following information: \n';
+     this.body = ' \nupdate server fail\nthe server return the following information: \n';
      if (this.request.path === '/update') {
          var shellPath = path.resolve(__dirname, 'update.sh');
          var command = 'sh ' + shellPath;
@@ -25,7 +25,7 @@ app.use(function *(next){
              cwd: path.resolve(__dirname)
          });
          if (result.indexOf('gitbooksuccess') > -1) {
-             this.body = 'update server success';
+             this.body = ' \nupdate server success';
          }
          else {
              this.body += result;

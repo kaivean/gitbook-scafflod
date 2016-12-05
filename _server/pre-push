@@ -13,8 +13,4 @@ GITPATH=`pwd`
 host=`cat package.json|grep '_serverHost'|tr -s [:space:]|cut -f 4 -d '"'`
 port=`cat package.json|grep '_serverPort'|tr -s [:space:]|cut -f 4 -d '"'`
 
-(sleep 3 &&
-echo "********************************************" &&
-echo "正在请求http://$host:$port/update，服务器更新中" &&
-echo "********************************************" &&
-curl http://$host:$port/update) &
+sh _server/request-update.sh &

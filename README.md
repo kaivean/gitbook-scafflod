@@ -49,7 +49,7 @@ Please refer to existed content in the SUMMARY.md
 Finally, when finish all documents, release the book to show other guys
 
 ### Server
-1. First modify `_serverHost`(your server host) and `_serverPort` (specify a server port),  then push this new configure
+1. First modify `_serverHost`(your server host) and `_serverPort` (specify a server port) in package.json,  then push this new configure
 2. Log in your server, then git clone the git project, then run the following command to start the server:
 ```
 sh _server/start-online-server.sh

@@ -16,17 +16,15 @@ Add new features:
 
     npm install gitbook-cli -g
 
-### Clone
+### 初始化Gitbook项目
+run a series of commands：
 
-    git clone https://github.com/kaivean/gitbook-scafflod.git
-
-### Init
-
-    gitbook init
-
-### Install plugins
-
-    gitbook install
+    # set your project name
+    ProjectName=<your project name>
+    # Init project：create your project、init gitbook、install plugins
+    wget https://github.com/kaivean/gitbook-scafflod/archive/master.zip && unzip master.zip && mv gitbook-scafflod-master $ProjectName && cd $ProjectName && git init && gitbook init && gitbook install
+    # specify git remote server
+    git add remote origin <git remote server>
 
 ### Start debug server
 After saving a .md file, gitbook can automatically compile .md to a html file and you can preview
@@ -45,7 +43,7 @@ Please refer to existed content in the SUMMARY.md
 * modify title filed in book.json
 * modify name filed in package.json
 
-## Release
+## Release Doc
 Finally, when finish all documents, release the book to show other guys
 
 ### Server

@@ -26,3 +26,4 @@ elif [ "$updatesucess" -eq "1" ]; then
 else
     echo "if updating doesn't success, please open the url 'http://$host:$port/update' when pushing finishes"
 fi
+echo "please type enter to exit"

@@ -16,7 +16,7 @@ Add new features:
 
     npm install gitbook-cli -g
 
-### 初始化Gitbook项目
+### Init Gitbook Project
 run a series of commands：
 
     # set your project name

@@ -12,7 +12,9 @@ GITPATH=`pwd`
 #  得到服务器地址
 host=`cat package.json|grep '_serverHost'|tr -s [:space:]|cut -f 4 -d '"'`
 port=`cat package.json|grep '_serverPort'|tr -s [:space:]|cut -f 4 -d '"'`
-echo "********************************************"
-echo "正在请求http://$host:$port/update，服务器更新中"
-echo "********************************************"
-(sleep 3 && curl http://$host:$port/update) &
+
+(sleep 3 &&
+echo "********************************************" &&
+echo "正在请求http://$host:$port/update，服务器更新中" &&
+echo "********************************************" &&
+curl http://$host:$port/update) &

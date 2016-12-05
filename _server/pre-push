@@ -4,7 +4,7 @@
 unset GIT_DIR
 cd `dirname $0`
 CURDIR=`pwd`
-echo "pwd: $DIR"
+
 # 到达git根目录
 cd ../../
 GITPATH=`pwd`

@@ -50,17 +50,17 @@ Finally, when finish all documents, release the book to show other guys
 
 ### Server
 1. First modify `_serverHost`(your server host) and `_serverPort` (specify a server port),  then push this new configure
-
-2. Log in your server, then git clone the git project, then run the following command:
-
-
+2. Log in your server, then git clone the git project, then run the following command to start the server:
 ```
 sh _server/start-online-server.sh
 ```
+3. Open up http://<`_serverHost`>:<`_serverPort`>/ in your browser
 
-3. Open up http://<_serverHost>:<_serverPort>/ in your browser
-
-### Update
+### Update Doc
+run the following command to copy pre-push to the git hooks directory, and then listen `git push` to trigger server update automatically.
+```
+sh _server/deployhook.sh
+```
 After you add or udpate .md files, just push to the remote master and will trigger server update automatically.
 **Attention** Updating other types of files, not .md files, may not trigger server update automatically
 
